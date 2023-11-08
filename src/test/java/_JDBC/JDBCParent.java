@@ -21,7 +21,7 @@ public class JDBCParent {
 
         try {
             baglanti = DriverManager.getConnection(HostUrl, username, password);
-            sorguEkrani = baglanti.createStatement();
+            sorguEkrani = baglanti.createStatement();//
         }
         catch(Exception ex){
             System.out.println("ex.getMessage() = " + ex.getMessage());
